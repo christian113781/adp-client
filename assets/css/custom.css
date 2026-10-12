@@ -1,0 +1,38 @@
+body{overflow-x:hidden}.hero{background-image:linear-gradient(90deg,rgba(10,22,29,.97) 0%,rgba(10,22,29,.82) 29%,rgba(10,22,29,.12) 58%,rgba(10,22,29,0) 100%),url('../images/01_hero_metal_roof_lake.png');background-size:cover;background-position:center}.btn-red{display:inline-flex;align-items:center;gap:.9rem;background:#E30613;color:#fff;padding:.82rem 1.35rem;border-radius:4px;font-size:13px;font-weight:600;transition:.2s}.btn-red:hover{background:#c90511}.btn-outline{display:inline-flex;align-items:center;gap:1rem;border:1px solid rgba(255,255,255,.8);color:#fff;padding:.78rem 1.35rem;border-radius:4px;font-size:13px;font-weight:600}.section{padding:28px 0 30px}.eyebrow{display:flex;align-items:center;gap:12px;color:#E30613;font-size:12px;font-weight:700}.eyebrow span{display:block;width:56px;height:1px;background:#E30613}.eyebrow.red{color:#E30613}.section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px}.section-head h2{font-size:30px;line-height:1.1;font-weight:700;letter-spacing:-.03em;margin-top:5px}.text-link{color:#E30613;font-size:12px;font-weight:600;text-decoration:underline;text-underline-offset:4px;white-space:nowrap}.service-card .image-wrap{height:145px;position:relative}.service-card img,.project img{width:100%;height:100%;object-fit:cover;border-radius:4px}.icon-box{position:absolute;left:10px;bottom:-15px;width:46px;height:46px;border-radius:8px 8px 0 0;background:#fff;display:grid;place-items:center}.icon-box svg{width:21px}.service-card h3{font-size:16px;font-weight:700;margin-top:18px}.service-card p{font-size:13px;color:#6b6b6b;line-height:1.45;margin-top:3px}.project img{height:135px}.project h3{font-size:14px;font-weight:700;margin-top:8px}.project p{display:flex;align-items:center;gap:5px;font-size:12px;color:#555;margin-top:5px}.project p svg{width:15px;height:15px;color:#E30613;fill:#E30613}.review{position:relative;background:#fff;color:#111;border-radius:5px;padding:12px 18px 14px;min-height:140px;overflow:hidden}.review .stars{color:#E30613;letter-spacing:2px;font-size:18px}.review p{font-size:12px;color:#666;line-height:1.5;margin:5px 0}.review strong,.review small{display:block;font-size:12px}.review small{color:#777;margin-top:2px}.review b{position:absolute;right:14px;bottom:-7px;color:#e8e8e8;font-size:64px;line-height:1}.partner-grid img{width:100%;max-width:150px;height:64px;object-fit:contain}.mobile-link{display:block;padding:12px 0;border-bottom:1px solid #eee}@media(max-width:767px){.hero{background-position:58% center}.section-head{align-items:flex-start}.section-head .text-link{display:none}.section-head h2{font-size:26px}.partner-grid img{height:52px;max-width:120px}.partner-grid img:last-child{grid-column:1/-1}}@media(min-width:1024px){#apropos>.max-w-site{max-width:1200px}}
+
+.footer-nav{display:flex;flex-wrap:nowrap;justify-content:space-between;gap:.5rem;white-space:nowrap;font-weight:500;color:#222;font-size:clamp(10px,2.9vw,12px);padding:14px 0;border-block:1px solid rgba(0,0,0,.08)}
+.footer-nav a:hover{color:#E30613}
+.footer-contact{display:grid;gap:10px;font-size:13px;color:#222}
+.footer-contact li{display:flex;align-items:center;gap:12px}
+.footer-contact svg{width:14px;height:14px;flex:none;color:#111;stroke-width:2.2}
+.footer-cta{padding:.85rem 1.25rem;font-size:13px;gap:.8rem;white-space:nowrap}
+.footer-cta svg{width:15px;height:15px}
+@media(min-width:768px){.footer-nav{justify-content:flex-start;gap:2.25rem;padding:14px 0;font-size:12px}.footer-contact{display:flex;flex-wrap:wrap;gap:10px 2rem;font-size:12px}.footer-cta{font-size:12px;padding:.7rem 1.25rem}}
+@media(min-width:1280px){.footer-nav{gap:2rem;border:0;padding:0 1rem}.footer-contact{display:grid;gap:0;font-size:11px;line-height:22px;margin-left:1rem;padding-left:2rem;margin-right:2rem;border-left:1px solid rgba(0,0,0,.15)}.footer-contact li{gap:12px}.footer-contact svg{width:13px;height:13px}}
+
+.about{position:relative;overflow:hidden}
+.about-img{display:block;width:100%;height:clamp(200px,58vw,340px);object-fit:cover;object-position:45% center;-webkit-mask-image:linear-gradient(to bottom,transparent 0,#000 45%);mask-image:linear-gradient(to bottom,transparent 0,#000 45%)}
+.about-inner{position:relative;z-index:2}
+@media(min-width:1024px){
+.about{display:flex;align-items:center;min-height:400px}
+.about-img{position:absolute;top:0;bottom:0;right:0;left:calc(35% - 96px);width:auto;height:100%;object-position:center center;-webkit-mask-image:linear-gradient(90deg,transparent 0,rgba(0,0,0,.35) 14%,#000 38%);mask-image:linear-gradient(90deg,transparent 0,rgba(0,0,0,.35) 14%,#000 38%)}
+.about-inner{width:100%}
+}
+@media(min-width:1024px) and (max-width:1200px){.about-img{left:42%}}
+
+.demo-modal{position:fixed;inset:0;z-index:100;display:grid;place-items:center;padding:20px;visibility:hidden;opacity:0;transition:opacity .25s,visibility .25s}
+.demo-modal.open{visibility:visible;opacity:1}
+.demo-backdrop{position:absolute;inset:0;background:rgba(10,22,29,.65);backdrop-filter:blur(2px)}
+.demo-card{position:relative;width:100%;max-width:420px;background:#fff;border-radius:10px;padding:32px 28px 26px;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,.35);transform:translateY(14px) scale(.97);transition:transform .25s;outline:0;border-top:4px solid #E30613}
+.demo-modal.open .demo-card{transform:none}
+.demo-icon{width:52px;height:52px;margin:0 auto 14px;border-radius:50%;background:#fde8ea;color:#E30613;display:grid;place-items:center}
+.demo-icon svg{width:26px;height:26px}
+.demo-card h3{font-size:19px;font-weight:700;letter-spacing:-.01em;color:#111}
+.demo-card p{font-size:14px;line-height:1.55;color:#444;margin-top:10px}
+.demo-card .demo-en{font-size:12px;color:#888;margin-top:8px}
+.demo-ok{margin-top:20px;justify-content:center;width:100%}
+.demo-x{position:absolute;top:10px;right:10px;width:32px;height:32px;display:grid;place-items:center;border-radius:6px;color:#777}
+.demo-x:hover{background:#f1f1f1;color:#111}
+.demo-x svg{width:18px;height:18px}
+.demo-card .demo-contact{margin-top:14px;padding-top:14px;border-top:1px solid #eee;font-size:13px;color:#444}
+.demo-contact a{color:#E30613;font-weight:600;text-decoration:underline;text-underline-offset:3px}

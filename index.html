@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ADP Toiture SA</title>
+  <meta name="description" content="ADP Toiture SA — Ferblanterie, couverture et étanchéité à Genève." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        colors: { adp: { red:'#E30613', dark:'#101C22', text:'#111111', muted:'#5F5F5F', light:'#F5F5F5' } },
+        fontFamily: { sans: ['Montserrat','sans-serif'] },
+        maxWidth: { site: '1200px' }
+      }}
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/custom.css" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="font-sans text-adp-text bg-white antialiased">
+  <header class="bg-white sticky top-0 z-50 shadow-[0_1px_0_rgba(0,0,0,.06)]">
+    <div class="max-w-site mx-auto px-5 h-[76px] flex items-center justify-between gap-8">
+      <a href="#" class="shrink-0"><img src="assets/images/logo.png" alt="ADP Toiture SA" class="w-[92px] h-[58px] object-contain"></a>
+      <nav class="hidden lg:flex items-center gap-9 text-[13px] font-medium">
+        <a href="#" class="text-adp-red border-b-2 border-adp-red py-[27px]">Accueil</a><a href="#services">Nos services</a><a href="#realisations">Nos réalisations</a><a href="#apropos">À propos</a><a href="#contact">Contact</a>
+      </nav>
+      <div class="hidden md:flex items-center gap-3 ml-auto lg:ml-0">
+        <a href="tel:0787609636" class="h-11 px-5 border border-red-200 rounded flex items-center gap-3 text-sm font-semibold"><i data-lucide="phone" class="w-4 h-4 text-adp-red"></i>078 760 96 36</a>
+        <a href="#contact" class="btn-red">Demander un devis <span>→</span></a>
+      </div>
+      <button id="menuBtn" class="lg:hidden md:hidden p-2" aria-label="Menu"><i data-lucide="menu"></i></button>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden px-5 pb-5 border-t text-sm"><a class="mobile-link" href="#">Accueil</a><a class="mobile-link" href="#services">Nos services</a><a class="mobile-link" href="#realisations">Nos réalisations</a><a class="mobile-link" href="#apropos">À propos</a><a class="mobile-link" href="#contact">Contact</a></div>
+  </header>
+
+  <main>
+    <section class="hero min-h-[390px] flex items-center">
+      <div class="max-w-site mx-auto w-full px-5 py-14">
+        <div class="max-w-[540px] text-white">
+          <div class="eyebrow">À GENÈVE ET SES ALENTOURS <span></span></div>
+          <h1 class="text-[38px] sm:text-[48px] lg:text-[54px] leading-[1.04] font-extrabold tracking-[-.035em] mt-3">ADP Toiture SA<br>pour vos travaux<br>de <span class="text-adp-red">toiture.</span></h1>
+          <p class="mt-4 text-[16px] sm:text-[18px] leading-6">Ferblanterie, couverture et étanchéité.<br>Un savoir-faire au service des particuliers<br class="hidden sm:block"> et des professionnels.</p>
+          <div class="flex flex-wrap gap-3 mt-6"><a href="#contact" class="btn-red">Demander un devis <span>→</span></a><a href="#services" class="btn-outline">Nos services</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section bg-white">
+      <div class="max-w-site mx-auto px-5">
+        <div class="section-head"><div><div class="eyebrow red">NOS SERVICES <span></span></div><h2>Notre savoir-faire.</h2></div><a class="text-link" href="#">Voir tous nos services →</a></div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-5">
+          <article class="service-card"><div class="image-wrap"><img src="assets/images/02_tile_roof.png" alt="Couverture"><div class="icon-box"><i data-lucide="house"></i></div></div><h3>Couverture</h3><p>Pose et rénovation<br>de toitures de tous types.</p></article>
+          <article class="service-card"><div class="image-wrap"><img src="assets/images/03_gutter_metal_roof.png" alt="Ferblanterie"><div class="icon-box"><i data-lucide="waves"></i></div></div><h3>Ferblanterie</h3><p>Travaux sur mesure en zinc,<br>cuivre et aluminium.</p></article>
+          <article class="service-card"><div class="image-wrap"><img src="assets/images/04_waterproofing_torch.png" alt="Étanchéité"><div class="icon-box"><i data-lucide="droplet"></i></div></div><h3>Étanchéité</h3><p>Solutions durables pour toitures<br>plates, terrasses et ouvrages.</p></article>
+          <article class="service-card"><div class="image-wrap"><img src="assets/images/05_sheet_metal_fabrication.png" alt="Fabrication sur mesure"><div class="icon-box"><i data-lucide="box"></i></div></div><h3>Fabrication sur mesure</h3><p>Pièces et éléments de ferblanterie<br>réalisés dans notre atelier.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="apropos" class="about bg-adp-dark text-white">
+      <div class="about-inner max-w-site mx-auto">
+        <div class="px-5 py-12 lg:w-[46%] lg:pr-10 flex flex-col justify-center">
+          <div class="eyebrow">NOTRE ENTREPRISE <span></span></div>
+          <h2 class="text-3xl lg:text-[34px] leading-tight font-bold mt-2">Une équipe à taille humaine,<br class="hidden sm:block"> un savoir-faire reconnu.</h2>
+          <p class="text-sm leading-[1.55] mt-4 text-white/90">Basés aux Acacias, aux Vives, à Genève, nous mettons notre expérience et notre savoir-faire au service de vos projets de toiture. Notre équipe de 7 à 8 collaborateurs intervient pour les particuliers, les entreprises et en collaboration avec les plus grands acteurs du secteur.</p>
+          <a href="#" class="btn-outline mt-5 self-start">En savoir plus <span>→</span></a>
+        </div>
+      </div>
+      <img src="assets/images/10_team_workshop_vans.png" alt="Équipe ADP Toiture SA" class="about-img">
+    </section>
+
+    <section id="realisations" class="section bg-white">
+      <div class="max-w-site mx-auto px-5">
+        <div class="section-head"><div><div class="eyebrow red">NOS RÉALISATIONS <span></span></div><h2>Des projets variés à Genève.</h2></div><a class="text-link" href="#">Voir toutes nos réalisations →</a></div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-5">
+          <article class="project"><img src="assets/images/06_roof_pressure_washing.png" alt="Entretien de toiture"><h3>Entretien de toiture</h3><p><i data-lucide="map-pin"></i> Genève</p></article>
+          <article class="project"><img src="assets/images/07_rooftop_terrace.png" alt="Étanchéité de terrasse"><h3>Étanchéité de terrasse</h3><p><i data-lucide="map-pin"></i> Genève</p></article>
+          <article class="project"><img src="assets/images/08_dormer_metal_roof.png" alt="Rénovation de couverture"><h3>Rénovation de couverture</h3><p><i data-lucide="map-pin"></i> Genève</p></article>
+          <article class="project"><img src="assets/images/09_copper_cladding.png" alt="Habillage en cuivre"><h3>Habillage en cuivre</h3><p><i data-lucide="map-pin"></i> Genève</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-adp-dark text-white py-8">
+      <div class="max-w-site mx-auto px-5">
+        <div class="section-head"><div><div class="eyebrow">ILS NOUS FONT CONFIANCE <span></span></div><h2 class="text-white">Des clients satisfaits.</h2></div><a class="btn-outline hidden sm:flex" href="#">Voir tous les avis →</a></div>
+        <div class="grid md:grid-cols-3 gap-5 mt-5">
+          <blockquote class="review"><div class="stars">★★★★★</div><p>« Travail soigné et équipe professionnelle.<br>Notre toit est comme neuf ! »</p><strong>M. Dupont</strong><small>Particulier, Genève</small><b>”</b></blockquote>
+          <blockquote class="review"><div class="stars">★★★★★</div><p>« Des conseils clairs et un résultat impeccable.<br>Je recommande sans hésiter. »</p><strong>Mme Martin</strong><small>Particulier, Genève</small><b>”</b></blockquote>
+          <blockquote class="review"><div class="stars">★★★★★</div><p>« Intervention rapide et efficace.<br>Une équipe sérieuse et à l'écoute. »</p><strong>M. Rossi</strong><small>Régie immobilière, Genève</small><b>”</b></blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="pt-6 pb-4 bg-white">
+      <div class="max-w-site mx-auto px-5"><div class="eyebrow red">ILS NOUS FONT CONFIANCE <span></span></div><div class="grid grid-cols-2 md:grid-cols-5 items-center justify-items-center gap-x-6 gap-y-4 mt-3 partner-grid">
+        <img src="assets/images/partners/01_implenia.png" alt="Implenia"><img src="assets/images/partners/02_losinger_marazzi.png" alt="Losinger Marazzi"><img src="assets/images/partners/03_racines_carrees.png" alt="Racines Carrées"><img src="assets/images/partners/04_de_gand_paysage.png" alt="De Gand Paysage"><img src="assets/images/partners/05_m_etancheite_sarl.png" alt="M Étanchéité Sàrl">
+      </div></div>
+    </section>
+  </main>
+
+  <footer id="contact" class="bg-[#eef0f1]">
+    <div class="max-w-site mx-auto px-5 pt-8 pb-7 md:py-7 grid gap-6 md:grid-cols-[1fr_auto] md:gap-y-5 xl:grid-cols-[130px_1fr_auto_auto] xl:gap-0 xl:py-6 items-center">
+      <a href="#" class="shrink-0 md:col-start-1 md:row-start-1 xl:col-start-1"><img src="assets/images/logo_footer.png" alt="ADP Toiture SA" class="w-[104px] xl:w-[92px] h-auto"></a>
+      <nav class="footer-nav md:col-span-2 md:row-start-2 xl:col-span-1 xl:col-start-2 xl:row-start-1 xl:justify-center">
+        <a href="#">Accueil</a><a href="#services">Nos services</a><a href="#realisations">Nos réalisations</a><a href="#apropos">À propos</a><a href="#contact">Contact</a>
+      </nav>
+      <ul class="footer-contact md:col-span-2 md:row-start-3 xl:col-span-1 xl:col-start-3 xl:row-start-1">
+        <li><i data-lucide="phone"></i><a href="tel:0787609636">078 760 96 36</a></li>
+        <li><i data-lucide="mail"></i><a href="mailto:info@adp-toiture.ch">info@adp-toiture.ch</a></li>
+        <li><i data-lucide="map-pin"></i><span>Chem. Frank-Thomas 24B, 1208 Genève</span></li>
+      </ul>
+      <a href="#" class="btn-red footer-cta justify-center md:justify-self-end md:col-start-2 md:row-start-1 xl:col-start-4"><span>Demander un devis</span> <i data-lucide="arrow-right"></i></a>
+    </div>
+    <div class="max-w-site mx-auto px-5">
+      <div class="border-t border-black/10 py-4 flex flex-col items-center sm:flex-row sm:justify-between gap-2 text-[11px] sm:text-[10px] text-gray-500 text-center">
+        <span>© 2024 ADP Toiture SA. Tous droits réservés.</span>
+        <span class="flex items-center gap-3"><a href="#" class="hover:text-adp-red">Mentions légales</a><i class="block w-px h-3 bg-black/20"></i><a href="#" class="hover:text-adp-red">Politique de confidentialité</a></span>
+      </div>
+    </div>
+  </footer>
+  <div id="demoModal" class="demo-modal" role="dialog" aria-modal="true" aria-labelledby="demoTitle" aria-hidden="true">
+    <div class="demo-backdrop" data-demo-close></div>
+    <div class="demo-card" tabindex="-1">
+      <button type="button" class="demo-x" aria-label="Fermer" data-demo-close><i data-lucide="x"></i></button>
+      <div class="demo-icon"><i data-lucide="info"></i></div>
+      <h3 id="demoTitle">Site de démonstration temporaire</h3>
+      <p>Ce site est une <strong>démo temporaire</strong> créée pour le client test <strong>Online Job Post</strong>.</p>
+      <p class="demo-en">This is a temporary demo created for the Online Job Post Test Client.</p>
+      <p class="demo-contact">Contact : <a href="mailto:cfmark406@gmail.com">cfmark406@gmail.com</a></p>
+      <button type="button" class="btn-red demo-ok" data-demo-close>J'ai compris</button>
+    </div>
+  </div>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
